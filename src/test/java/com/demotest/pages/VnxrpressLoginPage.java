@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class VnxrpressLoginPage extends BasePage {
 
-    @FindBy(xpath = "//a[contains(@title,'Đăng nhập 123')]")
+    @FindBy(xpath = "//a[contains(@title,'Đăng nhập')]")
     WebElementFacade loginMenu;
 
     @FindBy(id = "myvne_email_input")
@@ -27,7 +27,7 @@ public class VnxrpressLoginPage extends BasePage {
 
 
     public void clickBtnDangNhap() throws InterruptedException {
-        waitForCondition().until(ExpectedConditions.elementToBeClickable(loginFrame));
+        waitForCondition().until(ExpectedConditions.elementToBeClickable(loginMenu));
         loginMenu.waitUntilPresent().click();
     }
 

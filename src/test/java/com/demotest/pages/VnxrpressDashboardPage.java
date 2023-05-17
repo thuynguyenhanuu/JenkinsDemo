@@ -47,7 +47,7 @@ public class VnxrpressDashboardPage extends BasePage {
             String value = row.get("search");
             searchInput.sendKeys(value);
         }
-        Serenity.setSessionVariable("userName").to("Lay duoc gia tri rou nha");
+        Serenity.setSessionVariable("userName").to("gia tri ne");
         Serenity.recordReportData().withTitle("UserName session").andContents(Serenity.sessionVariableCalled("userName"));
     }
 

@@ -7,6 +7,6 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(features = "src/test/resources/features",
         plugin = {"pretty", "html:target/site/serenity/"},
-        glue = {"com.demotest.defs", "com.demotest.myhooks"})
+        glue = {"com.demotest.defs"})
 public class TestSuite {
 }
