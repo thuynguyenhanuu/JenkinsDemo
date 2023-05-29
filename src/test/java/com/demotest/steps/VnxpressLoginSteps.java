@@ -1,6 +1,5 @@
 package com.demotest.steps;
 
-import com.demotest.pages.VnxrpressDashboardPage;
 import com.demotest.pages.VnxrpressLoginPage;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.annotations.Steps;
